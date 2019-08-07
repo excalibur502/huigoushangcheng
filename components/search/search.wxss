@@ -1,0 +1,18 @@
+@import "../../app.wxss";
+
+.search{
+    background: var(--themeColor);
+    height: 90rpx;
+    padding: 15rpx 10rpx;
+}
+.searchButton{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15rpx;
+    height: 100%;
+}
+.iconfont{
+    font-size: 28rpx;
+}

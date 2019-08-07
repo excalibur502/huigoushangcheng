@@ -1,0 +1,32 @@
+/**index.wxss**/
+.index_swiper swiper {
+  height: 340rpx;
+}
+.index_nav {
+  display: flex;
+}
+.index_nav .nav_item {
+  flex: 1;
+  padding: 25rpx;
+}
+.index_floor .floor_item .floor_list {
+  overflow: hidden;
+  padding: 0 10rpx;
+}
+.index_floor .floor_item .floor_list navigator {
+  float: left;
+  width: 33.33%;
+}
+.index_floor .floor_item .floor_list navigator:first-child {
+  height: 415.94827586rpx;
+}
+.index_floor .floor_item .floor_list navigator:nth-last-child(-n+4) {
+  height: 207.97413793rpx;
+  border-left: 10rpx solid #fff;
+}
+.index_floor .floor_item .floor_list navigator:nth-last-child(-n+2) {
+  border-top: 10rpx solid #fff;
+}
+.index_floor .floor_item .floor_list navigator image {
+  height: 100%;
+}

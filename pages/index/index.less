@@ -1,0 +1,38 @@
+/**index.wxss**/
+.index_swiper{
+    swiper{
+        height: 340rpx;
+    }
+}
+.index_nav{
+    display: flex;
+    .nav_item{
+        flex:1;
+        padding: 25rpx;
+    }
+}
+.index_floor{
+    .floor_item{
+        .floor_list{
+            overflow: hidden;
+            padding: 0 10rpx;
+            navigator{
+                float: left;
+                width: 33.33%;
+                &:first-child{
+                    height: 386 / 232 * 750rpx / 3;
+                }
+                &:nth-last-child(-n+4){
+                    height: 386 / 232 * 750rpx / 3 / 2;
+                    border-left: 10rpx solid #fff;
+                }
+                &:nth-last-child(-n+2){
+                    border-top: 10rpx solid #fff;
+                }
+                image{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

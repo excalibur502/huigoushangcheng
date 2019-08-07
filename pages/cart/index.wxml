@@ -1,0 +1,81 @@
+<view class="address">
+ <!-- 
+    0 address默认值是空对象 true 
+    1 当 address 里面有真正的地址信息的时候 不要显示按钮！！！
+    2 没有 地址信息的时候才显示按钮！！！
+    
+   -->
+   <view class="btn_address" wx:if="{{!(address&&address.all)}}">
+    <button plain bindtap="handleChooseAddress">+ 添加收货地址</button>
+   </view>
+   <view class="user_info" wx:else>
+       <view class="user_address">
+           <view class="user_name">收货人: {{address.userName}}</view>
+           <view class="address_info">{{address.all}}</view>
+       </view>
+       <view class="user_phone">{{address.telNumber}}</view>
+   </view>
+</view>
+
+<view class="cart">
+    <view class="cart_title">
+        购物车
+    </view>
+    <view class="cart_content">
+        <block wx:if="{{hasGoods}}">
+            <view class="cart_item" wx:for="{{cartList}}" wx:key="value" wx:for-index="key" wx:for-item="value">
+            <view class="check">
+                <checkbox-group bindchange="handleChangeCheck" data-key="{{key}}">
+                    <checkbox color="red" checked="{{value.checked}}">
+                    </checkbox>
+                </checkbox-group>
+            </view>
+            <view class="img">
+                <image src="{{value.goods_small_logo || 'https://cms-assets.tutsplus.com/uploads/users/30/posts/25489/image/pac-404.png'}}" mode="widthFix"/>
+            </view>
+            
+            <view class="cart_info">
+                <view class="goods_name">
+                    {{value.goods_name}}
+                </view>
+                <view class="goods_price_wrap">
+                    <view class="goods_price">￥{{value.goods_price}}</view>
+                    <view class="goods_count">
+                        <text class="cart_num_edit" bindtap="handleChangeNum" data-changenum="{{-1}}" data-key="{{key}}">-</text>
+                        <text class="cart_num">{{value.num}}</text>
+                        <text class="cart_num_edit" bindtap="handleChangeNum" data-changenum="{{1}}" data-key="{{key}}">+</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        </block>
+        <block wx:else>
+            <view class="empty">
+            <text>
+            购物车竟然是空的？快去添加商品吧！                
+            </text>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564833064883&di=751ab54dae1a6e0f71780fe3ebc935f7&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fe1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658" mode="widthFix" />
+            </view>
+        </block>
+          
+        
+    </view>
+    <view class="cart_tool">
+        <view class="checkAll">
+            <checkbox-group bindchange="handleCheckAll">
+                <checkbox color="red" checked="{{isAllChecked}}">
+                    全选
+                </checkbox>
+            </checkbox-group>
+        </view>
+        <view class="total_price_wrap">
+            <view class="total_price">
+                合计 : <text>￥ {{totalPrice}}</text>
+            </view>
+            <view class="freight_tips">
+                包含运费
+            </view>
+        </view>
+        <view class="cart_pay" bindtap="handlePay">结算({{totalNum}})</view>
+    </view>
+</view>

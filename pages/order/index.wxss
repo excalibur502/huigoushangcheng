@@ -1,0 +1,14 @@
+.order_list .order_item {
+  border-bottom: 1rpx solid #ccc;
+}
+.order_list .order_item .item_list {
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order_list .order_item .item_price .price_value {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+}

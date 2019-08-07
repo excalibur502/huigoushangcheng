@@ -1,0 +1,68 @@
+page {
+  background: #dedede;
+}
+.user_bg {
+  height: 45vh;
+  overflow: hidden;
+  position: relative;
+}
+.user_bg .user_bg_img {
+  filter: blur(25rpx);
+}
+.user_bg .user_icon {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.user_bg .user_icon image {
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 50%;
+  margin-bottom: 30rpx;
+}
+.user_bg .user_icon .user_name {
+  color: #fff;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_mian {
+  position: absolute;
+  top: -50rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+.user_content .user_mian .user_collect {
+  display: flex;
+}
+.user_content .user_mian .user_collect .collect_item {
+  flex: 1;
+  background: #fff;
+  text-align: center;
+}
+.user_content .user_mian .user_collect .collect_item .collect_num {
+  color: var(--themeColor);
+}
+.user_content .user_mian .user_order {
+  background: #fff;
+  margin-top: 30rpx;
+}
+.user_content .user_mian .user_order .order_title {
+  padding: 10rpx;
+  border-bottom: 3rpx solid #dedede;
+}
+.user_content .user_mian .user_order .order_content {
+  display: flex;
+}
+.user_content .user_mian .user_order .order_content .order_item {
+  padding: 20rpx;
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_mian .user_order .order_content .order_item .iconfont {
+  color: var(--themeColor);
+  font-size: 56rpx;
+}

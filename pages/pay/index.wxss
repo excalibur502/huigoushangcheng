@@ -1,0 +1,130 @@
+page {
+  padding-bottom: 90rpx;
+}
+.address .btn_address {
+  text-align: center;
+  padding: 20rpx 0;
+}
+.address .btn_address button {
+  font-size: 32rpx;
+  width: 40%;
+  border: 1rpx solid #ddd;
+}
+.user_info {
+  display: flex;
+  padding: 20rpx ;
+}
+.user_info .user_phone {
+  flex: 1;
+  text-align: right;
+}
+.cart .cart_title {
+  font-size: 36rpx;
+  color: var(--themeColor);
+  padding: 20rpx;
+  border: 2rpx solid var(--themeColor);
+}
+.cart .cart_content .empty {
+  text-align: center;
+}
+.cart .cart_content .empty text {
+  font-size: 36rpx;
+  color: var(--themeColor);
+}
+.cart .cart_content .cart_item {
+  display: flex;
+  padding: 15rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+.cart .cart_content .cart_item .check {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart .cart_content .cart_item .img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200rpx;
+}
+.cart .cart_content .cart_item .img image {
+  width: 80%;
+}
+.cart .cart_content .cart_item .cart_info {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10rpx;
+}
+.cart .cart_content .cart_item .cart_info .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart .cart_content .cart_item .cart_info .goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart_content .cart_item .cart_info .goods_price_wrap .goods_price {
+  color: var(--themeColor);
+  font-weight: 600;
+  font-size: 32rpx;
+}
+.cart .cart_content .cart_item .cart_info .goods_price_wrap .goods_count {
+  display: flex;
+}
+.cart .cart_content .cart_item .cart_info .goods_price_wrap .goods_count .cart_num_edit {
+  height: 50rpx;
+  width: 50rpx;
+  border: 2rpx solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart_content .cart_item .cart_info .goods_price_wrap .goods_count .cart_num {
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15rpx;
+}
+.cart .cart_tool {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  height: 90rpx;
+  width: 100%;
+  background: #fff;
+}
+.cart .cart_tool .checkAll {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart_tool .total_price_wrap {
+  flex: 5;
+  text-align: right;
+  padding: 0 20rpx;
+}
+.cart .cart_tool .total_price_wrap .total_price text {
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.cart .cart_tool .cart_pay {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx;
+}

@@ -1,0 +1,51 @@
+<!-- 背景图和头像昵称 -->
+<view class="user_bg">
+    <image class="user_bg_img" src="{{userInfo.avatarUrl}}" mode="widthFix" />
+    <view class="user_icon">
+        <image src="{{userInfo.avatarUrl}}" mode="widthFix" />
+        <view class="user_name">{{userInfo.nickName}}</view>
+    </view>
+</view>
+<view class="user_content">
+    <view class="user_mian">
+        <view class="user_collect">
+            <navigator class="collect_item">
+                <view class="collect_num">0</view>
+                <view class="collect_name">收藏的店铺</view>
+            </navigator>
+            <navigator class="collect_item" url="/pages/collect/index">
+                <view class="collect_num">{{collectLength}}</view>
+                <view class="collect_name">收藏的商品</view>
+            </navigator>
+            <navigator class="collect_item">
+                <view class="collect_num">0</view>
+                <view class="collect_name">关注的分类</view>
+            </navigator>
+            <navgiator class="collect_item">
+                <view class="collect_num">0</view>
+                <view class="collect_name">我的足迹</view>
+            </navgiator>
+        </view>
+        <view class="user_order">
+            <view class="order_title">我的订单</view>
+            <view class="order_content">
+                <navigator class="order_item" url="/pages/order/index?type=1">
+                    <text class="iconfont icon-dingdan"></text>
+                    <view class="order_name">全部订单</view>
+                </navigator>
+                <navigator class="order_item" url="/pages/order/index?type=2">
+                    <text class="iconfont icon-daifukuan"></text>
+                    <view class="order_name">待付款</view>
+                </navigator>
+                <navigator class="order_item" url="/pages/order/index?type=3">
+                    <text class="iconfont icon-icon-test"></text>
+                    <view class="order_name">待收货</view>
+                </navigator>
+                <navigator class="order_item" url="/pages/order/index?type=4">
+                    <text class="iconfont icon-tuikuan6"></text>
+                    <view class="order_name">退款/退货</view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

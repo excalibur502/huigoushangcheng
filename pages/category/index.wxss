@@ -1,0 +1,47 @@
+.container {
+  /* 
+  高度 等于 视口的高度 - 头部搜索框的高度
+  calc  100vh 
+  不要less来编译 calc中的代码！！
+   */
+  /* 原样输出 */
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.container .left_menu {
+  flex: 1;
+}
+.container .left_menu view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+  border-bottom: 2rpx solid #ccc;
+  border-right: 2rpx solid #ccc;
+}
+.container .left_menu .active {
+  border-left: 10rpx solid var(--themeColor);
+  color: var(--themeColor);
+}
+.container .right_menu {
+  flex: 3;
+}
+.container .right_menu .goods_group .goods_title {
+  height: 90rpx;
+  line-height: 90rpx;
+  font-weight: 600;
+  text-align: center;
+  font-size: 32rpx;
+  color: #000;
+}
+.container .right_menu .goods_group .goods_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .right_menu .goods_group .goods_list navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.container .right_menu .goods_group .goods_list navigator image {
+  width: 50%;
+}

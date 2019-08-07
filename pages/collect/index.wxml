@@ -1,0 +1,22 @@
+<tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+    
+</tabs>
+
+<view class="goods_collect">
+    <navigator class="list_item" url="" wx:for="{{goodsList}}" wx:key="cat_id" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+        <view class="goods_img">
+                    <image src="{{item.goods_small_logo || 'https://cms-assets.tutsplus.com/uploads/users/30/posts/25489/image/pac-404.png'}}" mode="widthFix"/>
+                </view>
+                <view class="goods_info">
+                    <view class="goods_name">
+                        {{item.goods_name}}
+                    </view>
+                    <view class="goods_price">
+                        ￥{{item.goods_price}}
+                    </view>
+                </view>
+    </navigator>
+</view>
+<view class="empty" hidden="{{isHidden}}">
+    收藏夹空空如也...快去关注喜欢的商品吧！
+</view>

@@ -1,0 +1,7 @@
+
+<view class="search">
+    <navigator class="searchButton" url="/pages/search/index">
+        <text class="iconfont icon-sousuo"> 搜索 
+        </text>
+    </navigator>   
+</view>

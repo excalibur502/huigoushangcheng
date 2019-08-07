@@ -1,0 +1,33 @@
+page {
+  background: #dedede;
+}
+.searchBox {
+  display: flex;
+  height: 60rpx;
+  margin: 20rpx;
+}
+.searchBox input {
+  flex: 1;
+  height: 100%;
+  background: #fff;
+}
+.searchBox .cancelButton {
+  height: 60rpx;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  margin-left: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.goods_list .goods_item .goods_name {
+  color: #000;
+  background: #fff;
+  border-bottom: 1px solid #dedede;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 20rpx;
+  padding: 20rpx;
+}
